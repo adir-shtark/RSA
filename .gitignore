@@ -1,0 +1,39 @@
+# Keep only the files needed to rebuild this project.
+# Everything else (Vivado runs, caches, Vitis BSPs, logs) stays local.
+
+*
+
+# Allow directories so the rules below can re-include files inside them.
+!*/
+
+# Repository files
+!/.gitignore
+!/rebuild_project.tcl
+!/design_1.tcl
+
+# RTL
+!/rtl/**
+!/rtl/**/*.v
+!/rtl/**/*.sv
+!/rtl/**/*.vh
+!/rtl/**/*.vhd
+!/rtl/**/*.vhdl
+
+# Packaged custom IP, its GUI script, and the block-design .xci files
+!/IP/**
+!/IP/**/*.xci
+!/IP/**/*.xml
+!/IP/**/*.tcl
+
+# Constraints. None are checked in today; .xdc files added later are kept.
+!/constraints/**
+!/constraints/**/*.xdc
+!/constraints/**/.gitkeep
+
+# Application sources. Generated Vitis platform, BSP, and FSBL files stay ignored.
+!/SW/
+!/SW/rsa_sign_vitis/
+!/SW/rsa_sign_vitis/hello_rsa_sign/
+!/SW/rsa_sign_vitis/hello_rsa_sign/src/
+!/SW/rsa_sign_vitis/hello_rsa_sign/src/*.c
+!/SW/rsa_sign_vitis/hello_rsa_sign/src/*.h

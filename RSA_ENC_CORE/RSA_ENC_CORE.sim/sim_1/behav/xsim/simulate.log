@@ -1,4 +1,0 @@
-Time resolution is 1 ps
-Result = 2 (Expected = 2)
-Result = 4 (Expected = 4)
-$finish called at time : 215 ns : File "C:/Users/Public/Code/RSA_SIGN/RSA_ENC_CORE/RSA_ENC_CORE.srcs/sim_1/new/tb_rsa_enc.v" Line 84
